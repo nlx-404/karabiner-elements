@@ -1,0 +1,24 @@
+{
+    "description": "Caps Lock behaves as Caps Lock when tapped, but it behaves as a Left Control when held.",
+    "manipulators": [
+        {
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": { "optional": ["any"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_control",
+                    "lazy": true
+                }
+            ],
+            "to_if_alone": [
+                {
+                    "hold_down_milliseconds": 100,
+                    "key_code": "caps_lock"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
