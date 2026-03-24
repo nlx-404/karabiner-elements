@@ -1,0 +1,10 @@
+{
+    "description": "DPI Button to Mission Control",
+    "manipulators": [
+        {
+            "from": { "key_code": "f20" },
+            "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }],
+            "type": "basic"
+        }
+    ]
+}
