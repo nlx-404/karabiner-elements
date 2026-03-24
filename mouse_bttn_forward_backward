@@ -1,0 +1,25 @@
+{
+    "description": "Mouse Bttn4 and Bttn5 to Forward and Back",
+    "manipulators": [
+        {
+            "from": { "pointing_button": "button4" },
+            "to": [
+                {
+                    "key_code": "open_bracket",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "from": { "pointing_button": "button5" },
+            "to": [
+                {
+                    "key_code": "close_bracket",
+                    "modifiers": ["left_command"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
